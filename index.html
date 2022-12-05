@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <audio src="BgSound.mp3" controls>
+        <embed
+            src="BgSound.mp3" 
+            loop="true" 
+            hidden="true" 
+            autostart="true">
+    </audio>
+    <title>GameDev01</title>
+    <style>
+        head{
+            margin: 0;
+            padding: 0;
+            font-family: Courier-New;
+        }
+    </style>
+    
+</head>
+<body>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: url(Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+    </style>
+    <div class="links">
+        <img src="Logo.png" class="logo">
+        <ul>
+            <li><a href="https://www.instagram.com/ferdinand_2243/">Visit My Instagram</a></li>
+        </ul>
+    </div>
+    <style>
+        .links{
+            width: 90%;
+            margin: auto;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 1px;
+            cursor: pointer;
+        }
+        .links ul li a{
+            text-decoration: none;
+            color: blanchedalmond;
+            text-transform: uppercase;
+        }
+        .links ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .links ul li::after{
+            content:'';
+            height: 3px;
+            width: 0;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        .links ul li:hover::after{
+            width: 100%;
+        }
+    </style>
+    <div class="welcome">
+        <h1>A Short Portfolio</h1>
+        <p>The name is Ferdinand, currently a high school student at SMA SUTOMO 1.</p>
+        <p>I'm currently working on a project for the upcoming TWoS event, showcasing a wide variety of odd stuff, and mine's a game</p>
+    </div>
+    <style>
+        .welcome{
+            width: 100%;
+            position: absolute;
+            top: 20%;
+            text-align: left;
+            color: #fff ;
+    
+        }
+    </style>
+    <div class="filler">
+        <p>I still haven't thought about the name for the project.</p>
+        <p>But for the prerequisite "Achievement" section, I've got 2 silver medals on English Olympiads,</p>
+        <p>and a "Perfect TOEFL" placard.</p>
+        <p>Still no achievement in the game developing department though, not yet. </p>
+        <p>That's about it, and in case you were wondering, I spent 3 hours on this whole website.</p>
+    </div>
+    <style>
+        .filler{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            text-align: right;
+            color: #fff ;
+    
+        }
+    </style>
+
+</body>
